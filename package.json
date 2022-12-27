@@ -1,0 +1,18 @@
+{
+  "name": "circle-build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.11",
+    "cypress": "https://cdn.cypress.io/beta/npm/12.0.0/darwin-arm64/release/12.0.0-8ff38cdb01adb1a4d317154d5baafa2eff5bad3d/cypress.tgz",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "webpack": "^5.75.0"
+  }
+}

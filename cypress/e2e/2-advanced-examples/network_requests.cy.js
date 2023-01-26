@@ -86,11 +86,12 @@ context('Network Requests', () => {
       })
   })
 
-  it('cy.request() - save response in the shared test context', () => {
+  it.only('cy.request() - save response in the shared test context', () => {
     // https://on.cypress.io/variables-and-aliases
     cy.request('https://jsonplaceholder.cypress.io/users?_limit=1')
       .its('body').its('0') // yields the first element of the returned list
       .as('user') // saves the object in the test context
+      cy.pause()
       .then(function () {
         // NOTE 👀
         //  By the time this callback runs the "as('user')" command
@@ -113,7 +114,7 @@ context('Network Requests', () => {
       })
   })
 
-  it('cy.intercept() - route responses to matching requests', () => {
+  it.only('cy.intercept() - route responses to matching requests', () => {
     // https://on.cypress.io/intercept
 
     let message = 'whoa, this comment does not exist'
